@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Technical Documentation Page Challenge</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<nav id="nav-bar">
+  <h2>Widget Documentation</h2>
+  <h3><a href="introduction" class="nav-link">Introduction</h3>
+  <h3><a href="what-are-widgets" class="nav-link">What are widgets?</h3>
+  <h3><a href="widget-function-1" class="nav-link">Widget Function 1</h3>
+  <h3><a href="widget-function-2" class="nav-link">Widget Function 2</h3>
+  <h3><a href="widget-function-3" class="nav-link">Widget Function 3</h3>
+  <h3><a href="safety" class="nav-link">Safety</h3>
+  <h3><a href="references" class="nav-link">References</h3>
+
+</nav>
+<main id="main-doc">
+  <section id="introduction" class="main-section">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to the <strong>world of widgets!</strong> You are joining a <em>global community</em> of widget users and widget enthusiasts. Here at WidgetCo, we believe that widgets are the future. We believe that responsible widget use can transform how we experience our world and open up new possibilities!
+      </p>
+  </section>
+  <section id="what-are-widgets" class="main-section">
+      <h2>What Are Widgets?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac tempus lorem, ut ultrices mi. Aenean efficitur sapien ac luctus aliquam. Phasellus metus tellus, cursus nec augue vitae, feugiat accumsan massa. Donec luctus nisi at ullamcorper eleifend. Nullam vel dignissim libero. Vivamus egestas ultricies interdum. Aenean viverra sit amet elit quis viverra. Donec efficitur felis eu iaculis pellentesque. Aliquam nec purus ultricies, ornare tortor id, dictum lectus. Fusce iaculis pellentesque erat, non iaculis nunc venenatis ac.
+      </p>
+      <p>
+        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+  </section>
+  <section id="widget-function-1" class="main-section">
+      <h2>Widget Function 1</h2>
+      <p>
+        Donec nunc nisi, feugiat id nulla ut, fringilla dictum magna. Aliquam pulvinar, ex vel suscipit scelerisque, risus erat imperdiet mauris, vel efficitur mi lacus in sem. Nulla dolor lacus, malesuada ut accumsan sed, rhoncus non felis. Vivamus ac arcu consectetur nunc varius suscipit. Curabitur euismod non urna eget gravida. Vestibulum justo eros, sodales pellentesque diam in, imperdiet egestas elit. Suspendisse id neque non diam eleifend tincidunt. Cras a tempus ligula. Fusce sodales justo at posuere feugiat. Vivamus lobortis sit amet turpis ac sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      </p>
+      <p>
+        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+      <ol>
+        <li>
+          Lorem ipsum.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+      </ol>
+  </section>
+  <section id="widget-function-3" class="main-section">
+      <h2>Widget Function 3</h2>
+      <p>
+        Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
+      </p>
+      <p>
+        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+      <ol>
+        <li>
+          Item 1.
+        </li>
+        <li>
+          Item 2.
+        </li>
+        <li>
+          Item 3.
+        </li>
+      </ol>
+  </section>
+  <section id="safety" class="main-section">
+      <h2>Safety</h2>
+      <p>
+        Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
+      </p>
+      <p>
+        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+  </section>
+  <section id="references" class="main-section">
+      <h2>References</h2>
+      <p>
+        Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
+      </p>
+      <p>
+        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+  </section>
+</main>
+
+</body>
+</html>
