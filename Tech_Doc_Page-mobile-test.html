@@ -5,38 +5,46 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;900&display=swap" rel="stylesheet">
-    <style>
 
+    <style>
         #main-flex-container {
           display: flex;
           flex-flow: column;
         }
+
         #nav-bar {
           display: flex;
-          flex-flow: column;
+          flex-flow: row;
+          width: 100%;
+          height: 70px;
           align-items: center;
-          width: 300px;
-          height: 100%;
-          border-right: 3px solid #CBE896;
+          justify-content: space-between;
+          border-bottom: 5px solid #CBE896;
           background-color: #04395E;
-          padding: 10px;
+          padding: 5px;
           position: fixed;
+          top: 0;
+          left: 0;
         }
+
         #main-doc {
           display: flex;
           width: 100%;
           flex-flow: column;
-          padding: 50px;
           background-color: #F1F5E0;
+          padding-top: 71px;
         }
         #page-title {
           color: #CBE896;
           font-family: "Roboto Slab", sans-serif;
           font-weight: 900;
-          text-align: center;
-          font-size: 25px;
+          font-size: 20px;
           font-weight: 900;
+          min-width: 50px;
+          display: flex;
+          margin-left: 50px;
         }
+        /*
         .nav-button {
           background-color: #065289;
           border: 5px solid #065289;
@@ -48,61 +56,179 @@
           padding-bottom: 5px;
           font-family: "Roboto Slab", sans-serif;
           font-weight: 900;
-        }
-        .section-title {
+        }*/
+        .menu-content {
+          max-height: 0;
+          overflow: hidden;
           font-family: "Roboto Slab", sans-serif;
-          font-weight: 900;
-          padding-left: 50px;
-          margin-top: 80px;
-          color: #065289;
+          font-size: 18px;
+          color: #CBE896;
+          padding: 50px 0 0 50px;
+          text-decoration: none;
+          width: auto;
         }
+        /*Icons from Icons8: <a href="https://icons8.com/icon/3062/cancel">Cancel icon by Icons8</a> and <a href="https://icons8.com/icon/3761/menu">Menu icon by Icons8</a>*/
+        .collapsible-menu {
+          background-color: #04395E;
+          padding: 0 30px;
+          display: flex;
+          flex-direction: row-reverse;
+          width: auto;
+        }
+        .collapsible-menu ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        .collapsible-menu a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+        }
+        .collapsible-menu label {
+          font-family: "Roboto Slab", sans-serif;
+          font-size: 20px;
+          font-weight: 900;
+          color: #CBE896;
+          display: block;
+          cursor: pointer;
+          background: url(https://i.ibb.co/Y22Zbzv/icons8-menu-24.png) no-repeat left center;
+          padding: 10px 0 10px 50px;
+        }
+        input#menu {
+          display: none;
+        }
+        input:checked + label {
+          background-image: url(https://i.ibb.co/7RzVZbD/icons8-cancel-50.png);
+          padding: 10px 0 10px 10px;
+        }
+        /* Toggle Effect*/
+
+        input:checked ~ .menu-content {
+          max-height: 100%;
+          padding: 100px 10px 10px 10px;
+        }
+
+        input:not(:checked) ~ .menu-content {
+          min-width: 0px;
+        }
+
         a:link, a:visited {
           text-decoration: none;
-          color: #A29C9B;
-          border: 1px solid #F8F991;
+          color: #CBE896;
         }
         a:hover, a:active {
           text-decoration: none;
-          color: #CBE896;
-          background-color: #0876C4;
-          border: 1px solid #F8F991;
+          color: #A29C9B;
         }
+
+        .section-title {
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 900;
+          margin-top: 50px;
+          margin-left: 30px;
+          color: #065289;
+        }
+
         p, ol {
-          line-height: 2;
-          width: 80%;
+          line-height: 1.5;
+          width: 90%;
           margin: auto;
           padding-bottom: 20px;
         }
         .main-section {
           border-bottom: 5px solid #CBE896;
-          padding-bottom: 30px;
+          padding-bottom: 15px;
+          padding-top: 40px;
         }
         code {
           background-color: #E2D3CA;
         }
 
         @media only screen and (min-width: 768px) {
-          main-flex-container {
+          #main-flex-container {
             flex-direction: row;
           }
-
+          #nav-bar {
+            flex-direction: column;
+            width: 250px;
+            height: 100%;
+            justify-content: flex-start;
+            border-right: 5px solid #CBE896;
+            background-color: #04395E;
+            padding: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+          }
+          #main-doc {
+            display: flex;
+            width: auto;
+            flex-flow: column;
+            background-color: #F1F5E0;
+            padding-left: 260px;
         }
+          #page-title {
+            margin-left: 20px;
+            font-size: 35px;
+          }
+          .section-title {
+            margin-top: 0;
+          }
+          .main-section {
+            padding-top: 50px;
+          }
+          .collapsible-menu label {
+            display: none;
+            max-height: 0;
+          }
+          .collapsible-menu {
+            padding: 20px 10px 10px 10px;
+            display: flex;
+            flex-direction: row-reverse;
+          }
+
+          .menu-content {
+            max-height: 100%;
+            padding: 15px;
+
+          }
+      }
         </style>
 </head>
 
 <body>
 <div id="main-flex-container">
 <nav id="nav-bar">
-  <h2 id="page-title">Widgets:<br /> A Technical Guide</h2>
-  <div class="menu-content"
-      <a class="nav-button" href="#introduction"><h3>Introduction</h3></a>
-      <a class="nav-button" href="#what-are-widgets"><h3>What Are Widgets?</h3></a>
-      <a class="nav-button" href="#widget-function-1"><h3>Widget Function 1</h3></a>
-      <a class="nav-button" href="#widget-function-2"><h3>Widget Function 2</h3></a>
-      <a class="nav-button" href="#widget-function-3"><h3>Widget Function 3</h3></a>
-      <a class="nav-button" href="#safety"><h3>Safety</h3></a>
-      <a class="nav-button" href="#references"><h3>References</h3></a>
-</div>
+  <h2 id="page-title">Widgets: A Technical Guide</h2>
+  <div class="collapsible-menu">
+    <input type="checkbox" id="menu" />
+    <label for="menu">Menu</label>
+    <div class="menu-content">
+      <ul>
+        <li>
+          <a href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a href="#what-are-widgets">What Are Widgets?</a>
+        </li>
+        <li>
+          <a href="#widget-function-1">Widget Function 1</a>
+        </li>
+        <li>
+          <a href="#widget-function-2">Widget Function 2</a>
+        </li>
+        <li>
+          <a href="#widget-function-3">Widget Function 3</a>
+        </li>
+        <li>
+          <a href="#safety">Safety</a>
+        </li>
+        <li>
+          <a href="#references">References</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <main id="main-doc">
