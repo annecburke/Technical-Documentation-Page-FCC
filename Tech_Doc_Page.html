@@ -3,6 +3,8 @@
 <head>
     <title>Technical Documentation Page Challenge</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;900&display=swap" rel="stylesheet">
     <style>
         #main-flex-container {
           display: flex;
@@ -11,46 +13,154 @@
         #nav-bar {
           display: flex;
           flex-flow: column;
-          width: 200px;
+          align-items: center;
+          width: 300px;
+          height: 100%;
+          border-right: 3px solid #CBE896;
+          background-color: #04395E;
+          padding: 10px;
+          position: fixed;
         }
         #main-doc {
           display: flex;
-          width: 60%;
+          float: right;
+          width: 80%;
           flex-flow: column;
           padding: 50px;
+          background-color: #F1F5E0;
+          padding-left: 350px;
         }
-    </style>
+        #page-title {
+          color: #CBE896;
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 900;
+          text-align: center;
+          font-size: 25px;
+          font-weight: 900;
+        }
+        .nav-button {
+          background-color: #065289;
+          border: 5px solid #065289;
+          border-radius: 10px;
+          width: 80%;
+          height: 55px;
+          margin-bottom: 10px;
+          text-align: center;
+          padding-bottom: 5px;
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 900;
+        }
+        .section-title {
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 900;
+          padding-left: 50px;
+          margin-top: 80px;
+          color: #065289;
+        }
+        a:link, a:visited {
+          text-decoration: none;
+          color: #A29C9B;
+          border: 1px solid #F8F991;
+        }
+        a:hover, a:active {
+          text-decoration: none;
+          color: #CBE896;
+          background-color: #0876C4;
+          border: 1px solid #F8F991;
+        }
+        p, ol {
+          line-height: 2;
+          width: 80%;
+          margin: auto;
+          padding-bottom: 20px;
+        }
+        .main-section {
+          border-bottom: 5px solid #CBE896;
+          padding-bottom: 30px;
+        }
+        code {
+          background-color: #E2D3CA;
+        }
+
+        @media only screen and (max-width: 768px) {
+          main-flex-container {
+            flex-direction: column;
+          }
+
+        }
+        </style>
 </head>
 
 <body>
 <div id="main-flex-container">
 <nav id="nav-bar">
-  <h2>Widget Documentation</h2>
-  <h3><a href="#introduction" class="nav-link">Introduction</a></h3>
-  <h3><a href="#what-are-widgets" class="nav-link">What are widgets?</a></h3>
-  <h3><a href="#widget-function-1" class="nav-link">Widget Function 1</a></h3>
-  <h3><a href="#widget-function-2" class="nav-link">Widget Function 2</a></h3>
-  <h3><a href="#widget-function-3" class="nav-link">Widget Function 3</a></h3>
-  <h3><a href="#safety" class="nav-link">Safety</a></h3>
-  <h3><a href="#references" class="nav-link">References</a></h3>
-
+  <h2 id="page-title">Widgets:<br /> A Technical Guide</h2>
+  <div class="menu-content"
+      <a class="nav-button" href="#introduction"><h3>Introduction</h3></a>
+      <a class="nav-button" href="#what-are-widgets"><h3>What Are Widgets?</h3></a>
+      <a class="nav-button" href="#widget-function-1"><h3>Widget Function 1</h3></a>
+      <a class="nav-button" href="#widget-function-2"><h3>Widget Function 2</h3></a>
+      <a class="nav-button" href="#widget-function-3"><h3>Widget Function 3</h3></a>
+      <a class="nav-button" href="#safety"><h3>Safety</h3></a>
+      <a class="nav-button" href="#references"><h3>References</h3></a>
+</div>
 </nav>
+
 <main id="main-doc">
   <section id="introduction" class="main-section">
-      <h2>Introduction</h2>
+      <h3 class="section-title">Introduction</h3>
       <p>
         Welcome to the <strong>wonderful world of widgets!</strong> You are joining a <em>global community</em> of widget users and widget enthusiasts. Here at WidgetCo, we believe that widgets are the future. We believe that responsible widget use can transform how we experience our world and open up new possibilities!
       </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
   </section>
   <section id="what-are-widgets" class="main-section">
-      <h2>What Are Widgets?</h2>
+      <h3 class="section-title">What Are Widgets?</h3>
       <p>Widgets are the vessels through which humanity shapes, interacts, and perceives all the world around them. Widgets are, by their very nature, useful. They are used many times a day by all types of people. They effect changes in the environment around them and to themselves, at times.</p>
       <p>There is a wide variety of things of which widgets are capable. Widgets have shape, color, mass, smell, inputs, and outputs. Widgets can be combined with other widgets to enhance their many uses.</p>
-      <h3>Widgets Through the Ages</h3>
-      <p>Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <h3 class="section-title">Widgets Through the Ages</h3>
+      <p>Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
   </section>
   <section id="widget-function-1" class="main-section">
-      <h2>Widget Function 1</h2>
+      <h3 class="section-title">Widget Function 1</h3>
+      <p>
+        Donec nunc nisi, feugiat id nulla ut, fringilla dictum magna. Aliquam pulvinar, ex vel suscipit scelerisque, risus erat imperdiet mauris, vel efficitur mi lacus in sem. Nulla dolor lacus, malesuada ut accumsan sed, rhoncus non felis. Vivamus ac arcu consectetur nunc varius suscipit. Curabitur euismod non urna eget gravida. Vestibulum justo eros, sodales pellentesque diam in, imperdiet egestas elit. Suspendisse id neque non diam eleifend tincidunt. Cras a tempus ligula. Fusce sodales justo at posuere feugiat:<br /><code>if (true) { var x = 5; } console.log(x); // 5</code><br />Vivamus lobortis sit amet turpis ac sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      </p>
+      <p>
+        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+      <ol>
+        <li>
+          Lorem ipsum.
+        </li>
+        <li>
+          Lorem ipsum.
+        </li>
+      </ol>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. <br /><code>if (true) { var x = 5; } console.log(x); // 5</code><br />Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+  </section>
+  <section id="widget-function-2" class="main-section">
+      <h3 class="section-title">Widget Function 2</h3>
       <p>
         Donec nunc nisi, feugiat id nulla ut, fringilla dictum magna. Aliquam pulvinar, ex vel suscipit scelerisque, risus erat imperdiet mauris, vel efficitur mi lacus in sem. Nulla dolor lacus, malesuada ut accumsan sed, rhoncus non felis. Vivamus ac arcu consectetur nunc varius suscipit. Curabitur euismod non urna eget gravida. Vestibulum justo eros, sodales pellentesque diam in, imperdiet egestas elit. Suspendisse id neque non diam eleifend tincidunt. Cras a tempus ligula. Fusce sodales justo at posuere feugiat. Vivamus lobortis sit amet turpis ac sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus.
       </p>
@@ -59,15 +169,21 @@
       </p>
       <ol>
         <li>
-          Lorem ipsum.
+          Lorem ipsum: <code>if (true) { var x = 5; } console.log(x); // 5</code>
         </li>
         <li>
-          Lorem ipsum.
+          Lorem ipsum: <code>if (true) { var x = 5; } console.log(x); // 5</code>
         </li>
       </ol>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
   </section>
   <section id="widget-function-3" class="main-section">
-      <h2>Widget Function 3</h2>
+      <h3 class="section-title">Widget Function 3</h3>
       <p>
         Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
       </p>
@@ -76,33 +192,60 @@
       </p>
       <ol>
         <li>
-          Item 1.
+          Codey-code-code: <code>if (true) { var x = 5; } console.log(x); // 5</code>
         </li>
         <li>
-          Item 2.
+          Codey-code-code: <code>if (true) { var x = 5; } console.log(x); // 5</code>
         </li>
         <li>
-          Item 3.
+          Codey-code-code: <code>if (true) { var x = 5; } console.log(x); // 5</code>
         </li>
       </ol>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum: <code>function widget(var1, var2)</code>. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit: <br /><code>if (true) { var x = 5; } console.log(x); // 5</code><br /> Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
   </section>
   <section id="safety" class="main-section">
-      <h2>Safety</h2>
+      <h3 class="section-title">Safety</h3>
       <p>
         Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
       </p>
       <p>
         Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt mollis augue, sed imperdiet leo bibendum eu. Quisque metus lectus, consectetur sit amet venenatis quis, luctus nec tortor. Suspendisse potenti. Cras faucibus, enim eu congue malesuada, diam ex consectetur eros, eu gravida ligula diam ornare diam. Aliquam mollis aliquam mi eu ornare. Sed risus magna, sagittis posuere sem vel, tincidunt pulvinar nibh. Fusce quis urna dictum, lobortis sapien vel, lacinia magna. Quisque consectetur id velit eu dictum. Aliquam arcu enim, pharetra vel convallis at, scelerisque quis tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin rutrum leo turpis, id aliquam neque varius vel. Maecenas pellentesque urna sit amet nisl ornare ultrices. Morbi vitae justo ac sem cursus accumsan.
       </p>
   </section>
   <section id="references" class="main-section">
-      <h2>References</h2>
-      <p>
-        Nunc lobortis justo nec nibh faucibus interdum. Nulla vitae facilisis nisl. Ut eu tincidunt ligula. Maecenas mauris velit, eleifend interdum dignissim vitae, ultrices a augue. Nam sapien ex, sagittis vel augue et, luctus commodo velit. Proin commodo congue velit, vitae convallis arcu dictum et. Sed felis massa, egestas vel aliquam ut, commodo nec tellus. Nam malesuada lacus congue, egestas sapien a, aliquet sem. Nullam sit amet tempor justo. Suspendisse congue posuere massa, sed scelerisque est interdum et. Aliquam ac ultricies leo, id sodales ante. Phasellus ac malesuada ante, sed vestibulum dolor. Mauris sollicitudin lectus felis, sed ullamcorper dolor eleifend id. Donec porttitor imperdiet egestas.
-      </p>
-      <p>
-        Ut tempor pulvinar ex, eu pulvinar orci egestas eget. Morbi eu eros in ante aliquet imperdiet. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel est purus. Donec vulputate lorem ut risus scelerisque varius. Donec dui purus, convallis posuere sapien nec, ultricies gravida magna. Curabitur in elit et neque fringilla viverra. Duis ac nisi vitae tellus facilisis porttitor. Aenean consequat mollis tortor, aliquam convallis purus ultricies eu. Nulla auctor nec sapien sit amet posuere.
-      </p>
+      <h3 class="section-title">References</h3>
+      <ol id="ref-list">
+        <li>
+          Source 1
+        </li>
+        <li>
+          Source 2
+        </li>
+        <li>
+          Source 3
+        </li>
+        <li>
+          Source 4
+        </li>
+      </ol>
   </section>
 </main>
 </div>
