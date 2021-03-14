@@ -3,18 +3,36 @@
 <head>
     <title>Technical Documentation Page Challenge</title>
     <meta charset="utf-8">
+    <style>
+        #main-flex-container {
+          display: flex;
+          flex-flow: row;
+        }
+        #nav-bar {
+          display: flex;
+          flex-flow: column;
+          width: 200px;
+        }
+        #main-doc {
+          display: flex;
+          width: 60%;
+          flex-flow: column;
+          padding: 50px;
+        }
+    </style>
 </head>
 
 <body>
+<div id="main-flex-container">
 <nav id="nav-bar">
   <h2>Widget Documentation</h2>
-  <h3><a href="introduction" class="nav-link">Introduction</h3>
-  <h3><a href="what-are-widgets" class="nav-link">What are widgets?</h3>
-  <h3><a href="widget-function-1" class="nav-link">Widget Function 1</h3>
-  <h3><a href="widget-function-2" class="nav-link">Widget Function 2</h3>
-  <h3><a href="widget-function-3" class="nav-link">Widget Function 3</h3>
-  <h3><a href="safety" class="nav-link">Safety</h3>
-  <h3><a href="references" class="nav-link">References</h3>
+  <h3><a href="#introduction" class="nav-link">Introduction</a></h3>
+  <h3><a href="#what-are-widgets" class="nav-link">What are widgets?</a></h3>
+  <h3><a href="#widget-function-1" class="nav-link">Widget Function 1</a></h3>
+  <h3><a href="#widget-function-2" class="nav-link">Widget Function 2</a></h3>
+  <h3><a href="#widget-function-3" class="nav-link">Widget Function 3</a></h3>
+  <h3><a href="#safety" class="nav-link">Safety</a></h3>
+  <h3><a href="#references" class="nav-link">References</a></h3>
 
 </nav>
 <main id="main-doc">
@@ -87,6 +105,7 @@
       </p>
   </section>
 </main>
+</div>
 
 </body>
 </html>
